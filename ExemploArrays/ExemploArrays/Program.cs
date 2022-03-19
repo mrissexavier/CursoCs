@@ -31,6 +31,21 @@
             {
                 Console.WriteLine($"Nome {i+1}: {nomes[i]}; Idade: {idades[i]}");
             }
+
+            Console.WriteLine("=====================================================");
+
+            // Utilizando numeros no Array
+
+            Random rnd = new Random();
+            
+            int[] numeros = new int[30];
+
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                numeros[i] = rnd.Next(1, 100);
+                Console.Write(numeros[i] + " \t ");
+
+            }
         }
     }
 }
