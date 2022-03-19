@@ -43,9 +43,8 @@
             for (int i = 0; i < numeros.Length; i++)
             {
                 numeros[i] = rnd.Next(1, 100);
-                Console.Write(numeros[i] + "\t");
+                Console.Write(numeros[i] + "\t");    // Utilizando Console.Write e "\t" para dar um "tab" entre os itens
             }
-
 
             // Outras aplicações com Array
 
