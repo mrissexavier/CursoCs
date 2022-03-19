@@ -10,7 +10,7 @@
              
               string[] nomes = new string[] {"Emily", "Mark", "Ana", ...};
 
-              Desta forma não precisamos perguntar ao utilizador quais os elementos/nomes com o laço for:
+              Assim não precisamos perguntar ao utilizador quais os elementos/nomes com o laço for:
 
                  for (int i = 0; i < nomes.Length; i++)
             {
