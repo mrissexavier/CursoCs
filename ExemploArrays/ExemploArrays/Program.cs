@@ -32,20 +32,42 @@
                 Console.WriteLine($"Nome {i+1}: {nomes[i]}; Idade: {idades[i]}");
             }
 
-            Console.WriteLine("=====================================================");
+            Console.WriteLine("=====================================================================================");
 
             // Utilizando numeros no Array
 
             Random rnd = new Random();
             
-            int[] numeros = new int[30];
+            int[] numeros = new int[10];
 
             for (int i = 0; i < numeros.Length; i++)
             {
                 numeros[i] = rnd.Next(1, 100);
-                Console.Write(numeros[i] + " \t ");
-
+                Console.Write(numeros[i] + "\t");
             }
+
+
+            // Outras aplicações com Array
+
+            double[] decimais = new double[30];
+            bool[] trueOrFalse = new bool[30];
+
+            Console.WriteLine();
+            Console.WriteLine("=====================================================================================");
+
+            int[,] tabuada = new int[10,10]; // i = colunas j = linhas da tabela
+
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    tabuada[i, j] = (i + 1) * (j + 1);
+                    Console.Write(tabuada[i, j] + "\t");
+                }
+                Console.WriteLine( );
+            }
+
+
         }
     }
 }
