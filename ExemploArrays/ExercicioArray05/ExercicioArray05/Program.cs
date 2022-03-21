@@ -19,7 +19,7 @@
 
             // Ordenação crescente
             Console.WriteLine(" =================== Ordem Crescente ===================== ");
-                                                                   // Utilizando Bubble Sort para ordenar
+                                         // Utilizando Bubble Sort para ordenar
             Crescente();
             Imprimir();
 
