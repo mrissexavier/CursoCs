@@ -1,4 +1,4 @@
-﻿namespace Ex003
+﻿namespace Ex004
 {
     class Program
     {
