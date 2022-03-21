@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+            // ToLower()	= Retorna uma cópia dessa cadeia de caracteres (string) convertida em minúsculas.
+
             Console.WriteLine("Digite seu nome completo:");
             string nome = Console.ReadLine();
             nome = nome.ToLower();
