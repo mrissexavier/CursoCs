@@ -20,12 +20,16 @@
             // Ordenação crescente
             Console.WriteLine(" =================== Ordem Crescente ===================== ");
                                          // Utilizando Bubble Sort para ordenar
-            Crescente();
+            //Crescente();
+            Array.Sort(numeros); // <-- faz a mesma função do método Crescente();
             Imprimir();
 
             //Ordenação decrescente
             Console.WriteLine(" =================== Ordem Decrescente ===================== ");
-            Decrescente();
+            
+           //Decrescente();
+            Array.Sort(numeros);
+            Array.Reverse(numeros); // pega nossa ordenação e coloca na ordem reversa
             Imprimir();
         }
 
