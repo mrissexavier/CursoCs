@@ -10,7 +10,7 @@
             string nome = Console.ReadLine();
             nome = nome.ToUpper();
 
-            Console.WriteLine($"Chega mais, {nome} :)");
+            Console.WriteLine($"Chega mais, {nome} :)"); 
         }
     }
 }
