@@ -21,6 +21,7 @@
                 string letraEscolhida = Console.ReadLine();
 
                 nome = nome.Replace(letraEscolhida, "");
+                nome = nome.Trim();
 
                 Console.WriteLine($"Bem vindo(a), {nome}");
             }
