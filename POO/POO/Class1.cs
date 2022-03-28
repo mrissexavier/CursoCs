@@ -8,33 +8,41 @@ namespace POO
 {
     internal class Pessoa
     {
-        string nome;
-        string cidade;
-        int idade;
-        string email;
+        public string Nome { get; set; }
+        public string Cidade { get; set; }
+        public int Idade { get; set; }
+        public string Email { get; set; }
 
         public Pessoa()
         {
-            nome = "";
-            cidade = "";
-            idade = 0;
-            email = "";
+            Nome = "";
+            Cidade = "";
+            Idade = 0;
+            Email = "";
         }
 
         public Pessoa(string nome, string cidade, int idade, string email)
         {
-            this.nome = nome;
-            this.cidade = cidade;
-            this.idade = idade;
-            this.email = email;
+            this.Nome = nome;
+            this.Cidade = cidade;
+            this.Idade = idade;
+            this.Email = email;
+        }
+
+        public Pessoa(Pessoa pessoa)
+        {
+            Nome = pessoa.Nome;
+           Cidade = pessoa.Cidade;
+           Idade = pessoa.Idade;
+           Email = pessoa.Email;
         }
 
         public override string? ToString()
         {
-            return ($"Nome: {nome}" +
-                $"\nCidadae: {cidade}" +
-                $"\nIdade: {idade}" +
-                $"\nEmail: {email}\n");
+            return ($"Nome: {Nome}" +
+                $"\nCidade: {Cidade}" +
+                $"\nIdade: {Idade}" +
+                $"\nEmail: {Email}\n");
         }
     }
 }
