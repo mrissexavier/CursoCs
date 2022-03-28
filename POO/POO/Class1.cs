@@ -44,5 +44,20 @@ namespace POO
                 $"\nIdade: {Idade}" +
                 $"\nEmail: {Email}\n");
         }
+
+        public override bool Equals(object? obj)
+        {
+            if (Nome == ((Pessoa)obj).Nome &&
+                Cidade == ((Pessoa)obj).Cidade &&
+                 Idade == ((Pessoa)obj).Idade &&
+                Email == ((Pessoa)obj).Email);
+                return true;
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
